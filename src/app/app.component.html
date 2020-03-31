@@ -1,0 +1,52 @@
+ <div class="row">
+        <div class="col">
+            <div class="nav-bar__search js-search-bar" data-ref="searchBar">
+                <form class="search-bar" data-ref="searchBarForm" id="search-bar" action="https://hypothes.is/search"
+                    role="search">
+                    <input type="submit" class="nav-bar__search-hidden-input">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon search-bar__icon" height="16"
+                        viewBox="0 0 16 16" width="16">
+                        <g fill="currentColor" fill-rule="evenodd">
+                            <path d="M6 10a4 4 0 100-8 4 4 0 000 8zm0 2A6 6 0 116 0a6 6 0 010 12z">
+                            </path>
+                            <path d="M9.293 10.707l4.95 4.95 1.414-1.414-4.95-4.95-1.414 1.414z"></path>
+                        </g>
+                    </svg>
+                    <div class="search-bar__lozenges" data-ref="searchBarLozenges">
+                        <input class="search-bar__input js-input-autofocus" aria-autocomplete="list"
+                            aria-label="Search annotations" aria-haspopup="true" autocapitalize="off" autocomplete="off"
+                            data-ref="searchBarInput" placeholder="Search…" role="combobox" value=""
+                            style="visibility: visible;" (click)="showToggle()">
+                        <div class="search-bar__dropdown-menu-container">
+                            <h4 class="search-bar__dropdown-menu-header">Narrow your search:</h4>
+                            <ul role="listbox" class="search-bar__dropdown-menu">
+                                <li role="option" class="search-bar__dropdown-menu-item" data-suggestion-id="c2w8z">
+                                    <span class="search-bar__dropdown-menu-title"> user: </span>
+                                    <span class="search-bar__dropdown-menu-explanation"> search by username </span>
+                                </li>
+                                <li role="option" class="search-bar__dropdown-menu-item" data-suggestion-id="kuu9d">
+                                    <span class="search-bar__dropdown-menu-title"> tag: </span>
+                                    <span class="search-bar__dropdown-menu-explanation"> search for annotations with a
+                                        tag
+                                    </span>
+                                </li>
+                                <li role="option" class="search-bar__dropdown-menu-item" data-suggestion-id="ftbr5">
+                                    <span class="search-bar__dropdown-menu-title"> url: </span>
+                                    <span class="search-bar__dropdown-menu-explanation"> search by URL<br>for domain
+                                        level
+                                        search add trailing /* eg. example.com/* </span>
+                                </li>
+                                <li role="option" class="search-bar__dropdown-menu-item" data-suggestion-id="ztyhz">
+                                    <span class="search-bar__dropdown-menu-title"> group: </span>
+                                    <span class="search-bar__dropdown-menu-explanation"> show annotations associated
+                                        with a
+                                        group </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <input type="hidden" name="q" value="">
+                </form>
+            </div>
+        </div>
+    </div>
